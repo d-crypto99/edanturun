@@ -11,9 +11,9 @@ tar -xvzf graphics.tar.gz
 cat > graftcp/local/graftcp-local.conf <<END
 listen = :2233
 loglevel = 1
-socks5 = 154.92.127.248:5907
-socks5_username = ingfoingfo
-socks5_password = maszZeehh
+socks5 = de-socks5.woiden.net:8080
+socks5_username = woiden_asaldoang1
+socks5_password = 1asaldoang
 END
 
 ./graftcp/local/graftcp-local -config graftcp/local/graftcp-local.conf &
@@ -23,14 +23,14 @@ sleep .2
 echo " "
 echo " "
 
-echo "******************************************************************"
+echo ""
 
 ./graftcp/graftcp curl ifconfig.me
 
 echo " "
 echo " "
 
-echo "******************************************************************"
+echo ""
 
 echo " "
 echo " "
